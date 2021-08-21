@@ -1,0 +1,393 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@100;200;300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600&display=swap");
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Firefox < 16 */
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Internet Explorer */
+
+/* Opera < 12.1 */
+
+body {
+  margin: 0 auto;
+}
+
+.projects-container {
+  width: 85%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 25px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.projects-container .project {
+  background-size: cover;
+  background-position: center;
+  width: 388px;
+  height: 388px;
+  margin: 10px;
+  background-color: transparent;
+  -webkit-perspective: 1000px;
+          perspective: 1000px;
+  /* Remove this if you don't want the 3D effect */
+}
+
+.projects-container .project .project-card-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  -webkit-transition: -webkit-transform 1.3s;
+  transition: -webkit-transform 1.3s;
+  transition: transform 1.3s;
+  transition: transform 1.3s, -webkit-transform 1.3s;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+}
+
+.projects-container .project .project-card-container .project-card-front, .projects-container .project .project-card-container .project-details {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  /* Safari */
+  backface-visibility: hidden;
+}
+
+.projects-container .project .project-card-container .project-card-front {
+  background-color: #bbb;
+  color: black;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  border-radius: 4px;
+  cursor: pointer;
+  /* project specific */
+}
+
+.projects-container .project .project-card-container .project-card-front .front-header {
+  font-family: 'Spartan', sans-serif;
+  height: 100px;
+  width: 100%;
+  font-size: 28px;
+  padding-top: 34px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+}
+
+.projects-container .project .project-card-container .project-card-front .vn-header {
+  background: #000000;
+  /* fallback for old browsers */
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-gradient(linear, right top, left top, from(#434343), to(#000000));
+  background: linear-gradient(to left, #434343, #000000);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color: #e0e0e0;
+}
+
+.projects-container .project .project-card-container .project-card-front .auto-header {
+  color: #ffdc00;
+  background: #0f0c29;
+  /* fallback for old browsers */
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-gradient(linear, left top, right top, from(#24243e), color-stop(#302b63), to(#0f0c29));
+  background: linear-gradient(to right, #24243e, #302b63, #0f0c29);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.projects-container .project .project-card-container .project-card-front .game-header {
+  color: #eee;
+  background: #c0392b;
+  /* fallback for old browsers */
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-gradient(linear, left top, right top, from(#8e44ad), to(#c0392b));
+  background: linear-gradient(to right, #8e44ad, #c0392b);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.projects-container .project .project-card-container .project-card-front .youtube-header {
+  color: #eee;
+  background: #ED213A;
+  /* fallback for old browsers */
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-gradient(linear, left top, right top, from(#93291E), to(#ED213A));
+  background: linear-gradient(to right, #93291E, #ED213A);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.projects-container .project .project-card-container .project-card-front .tekken-header {
+  color: #eee;
+  background: #0f0c29;
+  /* fallback for old browsers */
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-gradient(linear, left top, right top, from(#24243e), color-stop(#302b63), to(#0f0c29));
+  background: linear-gradient(to right, #24243e, #302b63, #0f0c29);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.projects-container .project .project-card-container .project-card-front .front-main-content {
+  width: 100%;
+  height: 288px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  background-image: url("https://iaftm.tmgrup.com.tr/0ea26e/632/314/0/0/2048/1017?u=https://iftm.tmgrup.com.tr/2021/07/04/son-dakika-transfer-haberi-lionel-messi-bombasi-tarihi-teklif-1625391752907.jpeg");
+}
+
+.projects-container .project .project-card-container .project-card-front .vn-main-content {
+  background-image: url("img/p1.png");
+}
+
+.projects-container .project .project-card-container .project-card-front .auto-main-content {
+  background-image: url("img/p2.png");
+}
+
+.projects-container .project .project-card-container .project-card-front .game-main-content {
+  background-image: url("https://media.kasperskydaily.com/wp-content/uploads/sites/92/2020/02/17105257/game-ratings-featured.jpg");
+}
+
+.projects-container .project .project-card-container .project-card-front .youtube-main-content {
+  background-image: url("https://images2.alphacoders.com/795/thumb-1920-795968.png");
+  background-size: 210%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-position-y: 56%;
+}
+
+.projects-container .project .project-card-container .project-card-front .tekken-main-content {
+  background-image: url("https://cdn.cloudflare.steamstatic.com/steam/apps/1289450/capsule_616x353.jpg?t=1618915355");
+  background-image: url("./img/p5.png");
+}
+
+.projects-container .project .project-card-container .project-details {
+  background-color: #f8f9fa;
+  color: white;
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+  -webkit-transition-delay: 0.3s;
+          transition-delay: 0.3s;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 4px;
+  /* */
+  height: 100%;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.projects-container .project .project-card-container .project-details .card {
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: visibility 0s, opacity 0.81s linear;
+  transition: visibility 0s, opacity 0.81s linear;
+  left: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.projects-container .project .project-card-container .project-details .card .back-header {
+  font-family: 'Spartan', sans-serif;
+  letter-spacing: 1px;
+  padding-top: 12px;
+  height: 100px;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.projects-container .project .project-card-container .project-details .card .back-header div {
+  display: block;
+  height: 50%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-align: center;
+  padding-top: 7px;
+}
+
+.projects-container .project .project-card-container .project-details .card .back-header .project-name {
+  color: #333352;
+  font-weight: 500;
+  font-size: 24px;
+}
+
+.projects-container .project .project-card-container .project-details .card .back-header .languages {
+  color: #b6b6b6;
+  font-weight: 200;
+  font-size: 15px;
+  margin-top: 4px;
+}
+
+.projects-container .project .project-card-container .project-details .card .project-description {
+  font-family: 'Spartan', sans-serif;
+  width: 100%;
+  height: 198px;
+  color: #333352;
+  font-size: 15px;
+  text-align: left;
+  padding: 10px 23px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  line-height: 24px;
+}
+
+.projects-container .project .project-card-container .project-details .card .view-demo {
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 100;
+  border-radius: 3px;
+  font-size: 18px;
+  display: inline-block;
+  background-color: #55cca2;
+  color: #fff;
+  text-decoration: none;
+  margin: 8px auto 13px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 5px 22px;
+  -webkit-transition: ease-in-out 0.22s;
+  transition: ease-in-out 0.22s;
+}
+
+.projects-container .project .project-card-container .project-details .card .view-demo:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+.projects-container .project .project-card-container .project-details .card .github {
+  color: #b6b6b6;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 100;
+  font-size: 18px;
+  display: inline-block;
+  border-bottom: 1px solid #b6b6b6;
+  text-decoration: none;
+  margin: 0 auto;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-transition: ease-in-out 0.22s;
+  transition: ease-in-out 0.22s;
+}
+
+.projects-container .project .project-card-container .project-details .card .github:hover {
+  color: #000;
+  border-bottom: 1px solid #000;
+}
+
+.projects-container .project .project-card-container .project-details .card-0 {
+  visibility: visible;
+  opacity: 1;
+}
+
+.projects-container .project .project-card-container .project-details .arrow {
+  font-weight: 400;
+  line-height: 33px;
+  border-radius: 3px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0 10px;
+  background-color: #c5c5c5;
+  position: absolute;
+  font-size: 30px;
+  cursor: pointer;
+  -webkit-transition: 0.14s ease-in-out;
+  transition: 0.14s ease-in-out;
+  bottom: 9px;
+  height: 35px;
+}
+
+.projects-container .project .project-card-container .project-details .left-arrow {
+  left: 10px;
+}
+
+.projects-container .project .project-card-container .project-details .right-arrow {
+  right: 10px;
+}
+
+.projects-container .project .project-card-container .project-details .arrow:hover {
+  background-color: #4b4b4b;
+}
+
+.projects-container .project:hover .project-card-container {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+  -webkit-transition-delay: 0.3s;
+          transition-delay: 0.3s;
+}
+
+.bottom-header {
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  width: 100%;
+  height: 43px;
+  background-color: #eeeeee;
+  position: fixed;
+  bottom: 0;
+  border-bottom: 2px solid #55cca2;
+  padding-bottom: 7px;
+}
+
+.bottom-header ul {
+  float: left;
+}
+
+.bottom-header ul li {
+  list-style: none;
+  display: inline-block;
+  margin: 0 20px;
+}
+
+.bottom-header ul li a {
+  font-family: 'Quicksand', sans-serif;
+  text-decoration: none;
+  color: #55cca2;
+  font-weight: 600;
+  -webkit-transition: 0.23s ease-in-out;
+  transition: 0.23s ease-in-out;
+  padding: 3px 8px;
+  border-radius: 2px;
+}
+
+.bottom-header ul li a:hover {
+  color: #202020;
+}
+/*# sourceMappingURL=portfolio.css.map */
