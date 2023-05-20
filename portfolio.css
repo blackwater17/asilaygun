@@ -31,10 +31,10 @@ body {
 }
 
 .projects-container {
-  width: 85%;
+  width: 920px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  margin: 25px auto;
+  margin: 30px auto 200px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -47,6 +47,9 @@ body {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
+  -webkit-column-gap: 20px;
+          column-gap: 20px;
+  row-gap: 40px;
 }
 
 .projects-container .project {
@@ -54,7 +57,8 @@ body {
   background-position: center;
   width: 388px;
   height: 388px;
-  margin: 10px;
+  width: 290px;
+  height: 360px;
   background-color: transparent;
   -webkit-perspective: 1000px;
           perspective: 1000px;
@@ -90,7 +94,7 @@ body {
           box-sizing: border-box;
   width: 100%;
   height: 100%;
-  border-radius: 4px;
+  border-radius: 10px;
   cursor: pointer;
   /* project specific */
 }
@@ -99,12 +103,12 @@ body {
   font-family: 'Spartan', sans-serif;
   height: 100px;
   width: 100%;
-  font-size: 28px;
-  padding-top: 34px;
+  font-size: 24px;
+  padding-top: 37px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  border-top-left-radius: 4px;
-  border-top-right-radius: 4px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
 }
 
 .projects-container .project .project-card-container .project-card-front .vn-header {
@@ -159,12 +163,12 @@ body {
 
 .projects-container .project .project-card-container .project-card-front .front-main-content {
   width: 100%;
-  height: 288px;
+  height: 260px;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  border-bottom-left-radius: 4px;
-  border-bottom-right-radius: 4px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
   background-image: url("https://iaftm.tmgrup.com.tr/0ea26e/632/314/0/0/2048/1017?u=https://iftm.tmgrup.com.tr/2021/07/04/son-dakika-transfer-haberi-lionel-messi-bombasi-tarihi-teklif-1625391752907.jpeg");
 }
 
@@ -204,7 +208,7 @@ body {
           box-sizing: border-box;
   -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
           box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  border-radius: 4px;
+  border-radius: 10px;
   /* */
   height: 100%;
   width: 100%;
@@ -230,7 +234,7 @@ body {
   font-family: 'Spartan', sans-serif;
   letter-spacing: 1px;
   padding-top: 12px;
-  height: 100px;
+  height: 80px;
   width: 100%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -248,34 +252,37 @@ body {
 .projects-container .project .project-card-container .project-details .card .back-header .project-name {
   color: #333352;
   font-weight: 500;
-  font-size: 24px;
+  font-size: 19px;
 }
 
 .projects-container .project .project-card-container .project-details .card .back-header .languages {
-  color: #b6b6b6;
+  color: #989898;
   font-weight: 200;
   font-size: 15px;
+  font-size: 11px;
   margin-top: 4px;
+  letter-spacing: 0;
 }
 
 .projects-container .project .project-card-container .project-details .card .project-description {
   font-family: 'Spartan', sans-serif;
   width: 100%;
-  height: 198px;
+  height: 210px;
+  /*130*/
   color: #333352;
-  font-size: 15px;
+  font-size: 12px;
   text-align: left;
   padding: 10px 23px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  line-height: 24px;
+  line-height: 19px;
 }
 
 .projects-container .project .project-card-container .project-details .card .view-demo {
   font-family: 'Quicksand', sans-serif;
   font-weight: 100;
   border-radius: 3px;
-  font-size: 18px;
+  font-size: 14px;
   display: inline-block;
   background-color: #55cca2;
   color: #fff;
@@ -283,7 +290,7 @@ body {
   margin: 8px auto 13px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  padding: 5px 22px;
+  padding: 4px 17px;
   -webkit-transition: ease-in-out 0.22s;
   transition: ease-in-out 0.22s;
 }
@@ -297,7 +304,7 @@ body {
   color: #b6b6b6;
   font-family: 'Quicksand', sans-serif;
   font-weight: 100;
-  font-size: 18px;
+  font-size: 14px;
   display: inline-block;
   border-bottom: 1px solid #b6b6b6;
   text-decoration: none;
