@@ -56,7 +56,7 @@ document.querySelector(".right-arrow-fut").addEventListener("click", () => {
 
 
     for (let i=0; i<document.querySelectorAll(".card-fut").length; i++) {
-        if (p2_active%5 != i) {
+        if (p2_active%6 != i) {
             //document.querySelectorAll(".card")[i].style.display = "none"
             document.querySelectorAll(".card-fut")[i].style.visibility="hidden";
             document.querySelectorAll(".card-fut")[i].style.opacity= 0;
@@ -75,10 +75,10 @@ document.querySelector(".right-arrow-fut").addEventListener("click", () => {
 document.querySelector(".left-arrow-fut").addEventListener("click", () => {
     p2_active--
 
-    if (p2_active < 0) p2_active+=5
+    if (p2_active < 0) p2_active+=6
 
     for (let i=0; i<document.querySelectorAll(".card-fut").length; i++) {
-        if (p2_active%5 != i) {
+        if (p2_active%6 != i) {
             //document.querySelectorAll(".card")[i].style.display = "none"
             document.querySelectorAll(".card-fut")[i].style.visibility="hidden";
             document.querySelectorAll(".card-fut")[i].style.opacity= 0;
@@ -195,17 +195,14 @@ let p5_active = 0
 
 document.querySelector(".right-arrow-tekken").addEventListener("click", () => {
     p5_active++
-
-
     for (let i=0; i<document.querySelectorAll(".card-tekken").length; i++) {
-        if (p5_active%5 != i) {
+        if (p5_active%7 != i) {
             //document.querySelectorAll(".card")[i].style.display = "none"
             document.querySelectorAll(".card-tekken")[i].style.visibility="hidden";
             document.querySelectorAll(".card-tekken")[i].style.opacity= 0;
         }
 
         else {
-  
             //document.querySelectorAll(".card")[i].style.display = "inline-block"
             document.querySelectorAll(".card-tekken")[i].style.visibility="visible";
             document.querySelectorAll(".card-tekken")[i].style.opacity= 1;
@@ -217,10 +214,10 @@ document.querySelector(".right-arrow-tekken").addEventListener("click", () => {
 document.querySelector(".left-arrow-tekken").addEventListener("click", () => {
     p5_active--
 
-    if (p5_active < 0) p5_active+=5
+    if (p5_active < 0) p5_active+=7
 
     for (let i=0; i<document.querySelectorAll(".card-tekken").length; i++) {
-        if (p5_active%5 != i) {
+        if (p5_active%7 != i) {
             //document.querySelectorAll(".card")[i].style.display = "none"
             document.querySelectorAll(".card-tekken")[i].style.visibility="hidden";
             document.querySelectorAll(".card-tekken")[i].style.opacity= 0;
