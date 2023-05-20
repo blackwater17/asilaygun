@@ -99,17 +99,17 @@ body {
                 width: 220px;
                 height: 220px;
                 border-radius: 50%;
-                background-color: grey;
                 margin: 0;
                 position: absolute;
                 top: 50%;
                 left: 50%;
                 -ms-transform: translate(-50%, -50%);
                 transform: translate(-50%, -50%);         
-                background-image: url("https://i.hizliresim.com/e9c7nf4.png");
-                background-size: cover;
+                background-image: url("https://i.hizliresim.com/drgagz9.png");
+                background-size: contain;
                 box-shadow: 0 0 15px #333352;   
-  
+                background-position: center;
+                background-repeat: no-repeat;
             }
 
             .middle-info {
@@ -195,15 +195,15 @@ body {
               
             }
 
+            .second {
+                margin-top: 20px;
+            }
+
         }
 
         .bottom-box:nth-of-type(1) {
             border-right: 1px solid rgb(201, 201, 201);
         }
-
-        
-
-
 
     }
 
