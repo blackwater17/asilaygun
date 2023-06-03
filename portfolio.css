@@ -162,13 +162,13 @@ body {
 }
 
 .projects-container .project .project-card-container .project-card-front .movie-header {
-  color: #eee;
-  background: #141E30;
+  background: #536976;
   /* fallback for old browsers */
   /* Chrome 10-25, Safari 5.1-6 */
-  background: -webkit-gradient(linear, left top, right top, from(#243B55), to(#141E30));
-  background: linear-gradient(to right, #243B55, #141E30);
+  background: -webkit-gradient(linear, left top, right top, from(#292E49), to(#536976));
+  background: linear-gradient(to right, #292E49, #536976);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color: #B3C6D4;
 }
 
 .projects-container .project .project-card-container .project-card-front .front-main-content {
@@ -190,11 +190,11 @@ body {
 }
 
 .projects-container .project .project-card-container .project-card-front .game-main-content {
-  background-image: url("https://media.kasperskydaily.com/wp-content/uploads/sites/92/2020/02/17105257/game-ratings-featured.jpg");
+  background-image: url("img/p3.jpg");
 }
 
 .projects-container .project .project-card-container .project-card-front .youtube-main-content {
-  background-image: url("https://images2.alphacoders.com/795/thumb-1920-795968.png");
+  background-image: url("img/p4.png");
   background-size: 210%;
   background-position: center;
   background-repeat: no-repeat;

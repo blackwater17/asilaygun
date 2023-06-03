@@ -131,10 +131,10 @@ body {
                 }
 
                 .movie-header {
-                    color:#eee;
-                    background: #141E30;  /* fallback for old browsers */
-                    background: -webkit-linear-gradient(to right, #243B55, #141E30);  /* Chrome 10-25, Safari 5.1-6 */
-                    background: linear-gradient(to right, #243B55, #141E30); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+                    background: #536976;  /* fallback for old browsers */
+                    background: -webkit-linear-gradient(to right, #292E49, #536976);  /* Chrome 10-25, Safari 5.1-6 */
+                    background: linear-gradient(to right, #292E49, #536976); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+                    color: #B3C6D4;                
                 }
 
                 .front-main-content {
@@ -145,7 +145,6 @@ body {
                     background-repeat: no-repeat;
                     border-bottom-left-radius: 10px;
                     border-bottom-right-radius: 10px;
-                    // background-image: url("https://iaftm.tmgrup.com.tr/0ea26e/632/314/0/0/2048/1017?u=https://iftm.tmgrup.com.tr/2021/07/04/son-dakika-transfer-haberi-lionel-messi-bombasi-tarihi-teklif-1625391752907.jpeg");
                 }
 
                 /* project specific */
@@ -158,11 +157,11 @@ body {
                 }
 
                 .game-main-content {
-                    background-image:url("https://media.kasperskydaily.com/wp-content/uploads/sites/92/2020/02/17105257/game-ratings-featured.jpg");
+                    background-image: url("img/p3.jpg");
                 }
 
                 .youtube-main-content {
-                    background-image: url("https://images2.alphacoders.com/795/thumb-1920-795968.png");
+                    background-image: url("img/p4.png");
                     background-size:210%;
                     background-position: center;
                     background-repeat: no-repeat;
