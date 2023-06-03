@@ -231,3 +231,40 @@ document.querySelector(".left-arrow-tekken").addEventListener("click", () => {
         }
     }
 })
+
+/************************************ */
+
+
+let p6_active = 0
+
+document.querySelector(".right-arrow-movie").addEventListener("click", () => {
+    p6_active++
+    for (let i=0; i<document.querySelectorAll(".card-movie").length; i++) {
+        if (p6_active%4 != i) {
+            document.querySelectorAll(".card-movie")[i].style.visibility="hidden";
+            document.querySelectorAll(".card-movie")[i].style.opacity= 0;
+        }
+        else {
+            document.querySelectorAll(".card-movie")[i].style.visibility="visible";
+            document.querySelectorAll(".card-movie")[i].style.opacity= 1;
+        }
+    }
+})
+
+
+document.querySelector(".left-arrow-movie").addEventListener("click", () => {
+    p6_active--
+
+    if (p6_active < 0) p6_active+=4
+
+    for (let i=0; i<document.querySelectorAll(".card-movie").length; i++) {
+        if (p6_active%4 != i) {
+            document.querySelectorAll(".card-movie")[i].style.visibility="hidden";
+            document.querySelectorAll(".card-movie")[i].style.opacity= 0;
+        }
+        else {
+            document.querySelectorAll(".card-movie")[i].style.visibility="visible";
+            document.querySelectorAll(".card-movie")[i].style.opacity= 1;
+        }
+    }
+})
