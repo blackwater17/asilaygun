@@ -268,3 +268,43 @@ document.querySelector(".left-arrow-movie").addEventListener("click", () => {
         }
     }
 })
+
+/************************************ */
+
+
+let p7_active = 0
+
+document.querySelector(".right-arrow-vgmhub").addEventListener("click", () => {
+    p7_active++
+    for (let i=0; i<document.querySelectorAll(".card-vgmhub").length; i++) {
+        if (p7_active%5 != i) {
+            document.querySelectorAll(".card-vgmhub")[i].style.visibility="hidden";
+            document.querySelectorAll(".card-vgmhub")[i].style.opacity= 0;
+        }
+
+        else {
+            document.querySelectorAll(".card-vgmhub")[i].style.visibility="visible";
+            document.querySelectorAll(".card-vgmhub")[i].style.opacity= 1;
+        }
+    }
+})
+
+
+document.querySelector(".left-arrow-vgmhub").addEventListener("click", () => {
+    p7_active--
+
+    if (p7_active < 0) p7_active+=5
+
+    for (let i=0; i<document.querySelectorAll(".card-vgmhub").length; i++) {
+        if (p7_active%5 != i) {
+            //document.querySelectorAll(".card")[i].style.display = "none"
+            document.querySelectorAll(".card-vgmhub")[i].style.visibility="hidden";
+            document.querySelectorAll(".card-vgmhub")[i].style.opacity= 0;
+        }
+
+        else {
+            document.querySelectorAll(".card-vgmhub")[i].style.visibility="visible";
+            document.querySelectorAll(".card-vgmhub")[i].style.opacity= 1;
+        }
+    }
+})

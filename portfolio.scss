@@ -134,7 +134,14 @@ body {
                     background: #536976;  /* fallback for old browsers */
                     background: -webkit-linear-gradient(to right, #292E49, #536976);  /* Chrome 10-25, Safari 5.1-6 */
                     background: linear-gradient(to right, #292E49, #536976); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-                    color: #B3C6D4;                
+                    color: #B3C6D4;             
+                }
+
+                .vgmhub-header {
+                    background: #EF5466 !important; /* fallback for old browsers */
+                    background: -webkit-linear-gradient(to right, #292E49, #536976);  /* Chrome 10-25, Safari 5.1-6 */
+                    background: linear-gradient(to right, #292E49, #536976); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+                    color: #fff;                
                 }
 
                 .front-main-content {
@@ -174,6 +181,11 @@ body {
                 .movie-main-content {
                     background-position-x: 46.1%;
                     background-image: url("img/p6.avif");          
+                }
+
+                .vgmhub-main-content {
+                    background-position-x: 46.1%;
+                    background-image: url("img/p7.jpg");          
                 }
               }
 
