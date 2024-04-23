@@ -11,6 +11,7 @@ const projects = [
     demoLink: "https://www.vgmhub.com",
     repoLink: undefined,
     folderName: "p7",
+    cover: "p7.jpg"
   },
   {
     id: "iptv",
@@ -150,7 +151,10 @@ const PortfolioPage: React.FC = () => {
             <div className="project-card-container">
               <div className="project-card-front">
                 <div className={"front-header " + project.id + "-header"}>{project.name}</div>
-                <div className={"front-main-content " + project.id + "-main-content"}></div>
+                <div
+                  className={"front-main-content " + project.id + "-main-content"}
+                  // style={{ backgroundImage: `url(../../../img/${project.cover})` }}
+                ></div>
               </div>
               <div className="project-details">
                 <div className={"card card-0 card-" + project.id}>
