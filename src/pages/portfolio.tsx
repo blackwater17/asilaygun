@@ -170,12 +170,9 @@ const PortfolioPage: React.FC = () => {
                   }
                 </div>
 
-                {/* <div className={"card card-1 card-" + project.id} style={{ backgroundImage: "url(img/" + project.folderName + "_images/1.jpg)" }}></div>
-            <div className={"card card-2 card-" + project.id} style={{ backgroundImage: "url(img/" + project.folderName + "_images/2.jpg)" }}></div> */}
-
                 {Array.from({ length: project.imageCount }, (_, i) => {
                   const cardClassName = `card card-${i + 1} card-${project.id}`;
-                  const imageUrl = `img/${project.folderName}_images/${i + 1}.jpg`;
+                  const imageUrl = `./img/${project.folderName}_images/${i + 1}.jpg`;
                   return (
                     <div key={i} className={cardClassName} style={{ backgroundImage: `url(${imageUrl})` }}></div>
                   );
