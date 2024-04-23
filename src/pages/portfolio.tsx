@@ -22,6 +22,7 @@ const projects = [
     demoLink: undefined,
     repoLink: "https://github.com/blackwater17/iptv-football-app",
     folderName: "p9",
+    cover: "p9.jpg"
   },
   {
     id: "screenshot-comparison",
@@ -32,6 +33,7 @@ const projects = [
     demoLink: "https://blackwater17.github.io/screenshot-comparison-tool",
     repoLink: "https://github.com/blackwater17/screenshot-comparison-tool",
     folderName: "p8",
+    cover: "p8.jpg"
   },
   {
     id: "movie",
@@ -42,6 +44,7 @@ const projects = [
     demoLink: "https://blackwater17.github.io/movie-explorer/#/",
     repoLink: "https://github.com/blackwater17/movie-explorer",
     folderName: "p6",
+    cover: "p6.avif"
   },
   {
     id: "tekken",
@@ -52,6 +55,7 @@ const projects = [
     demoLink: "https://blackwater17.github.io/tekken-portal",
     repoLink: "https://github.com/blackwater17/tekken-portal",
     folderName: "p5",
+    cover: "p5.png"
   },
   {
     id: "vn",
@@ -63,6 +67,7 @@ const projects = [
     screenshots: "https://imgur.com/a/s261IU0",
     repoLink: "https://github.com/blackwater17/vn-music-organizer",
     folderName: "p1",
+    cover: "p1.png"
   },
   {
     id: "auto",
@@ -74,6 +79,7 @@ const projects = [
     screenshots: "https://imgur.com/a/NuwQC7A",
     repoLink: "https://github.com/blackwater17/autofutbuilder",
     folderName: "p2",
+    cover: "p2.png"
   },
   {
     id: "game",
@@ -85,6 +91,7 @@ const projects = [
     screenshots: "https://imgur.com/a/rhX0sJp",
     repoLink: "https://github.com/blackwater17/game-browser",
     folderName: "p3",
+    cover: "p3.jpg"
   },
   {
     id: "youtube",
@@ -96,6 +103,7 @@ const projects = [
     screenshots: "https://imgur.com/a/qmaJF8p",
     repoLink: "https://github.com/blackwater17/youtube-loop-between",
     folderName: "p4",
+    cover: "p4.png"
   },
 ]
 
@@ -153,7 +161,7 @@ const PortfolioPage: React.FC = () => {
                 <div className={"front-header " + project.id + "-header"}>{project.name}</div>
                 <div
                   className={"front-main-content " + project.id + "-main-content"}
-                  // style={{ backgroundImage: `url(../../../img/${project.cover})` }}
+                  style={{ backgroundImage: `url(img/${project.cover})` }}
                 ></div>
               </div>
               <div className="project-details">
