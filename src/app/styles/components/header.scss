@@ -1,0 +1,35 @@
+.bottom-header {
+    width: 100%;
+    background-color: rgb(238, 238, 238);
+    position: fixed;
+    bottom: 0;
+    border-bottom: 2px solid #55cca2;
+    left: 0;
+    box-sizing: border-box;
+
+    ul {
+        display: flex;
+        flex-direction: row;
+        column-gap: 24px;
+        padding: 18px 24px;
+        margin: 0;
+
+        li {
+            list-style: none;
+
+            a {
+                font-family: 'Quicksand', sans-serif;
+                text-decoration: none;
+                color: #55cca2;
+                font-weight: bolder;
+                transition: 0.23s ease-in-out;
+                padding: 3px 8px;
+                border-radius: 2px;
+            }
+
+            a:hover {
+                color: rgb(32, 32, 32);
+            }
+        }
+    }
+}

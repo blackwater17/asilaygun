@@ -1,0 +1,330 @@
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@100;200;300;400;500;600;700&display=swap');
+
+.projects-container {
+    max-width: 920px;
+    width: 100%;
+    min-width: 320px;
+    box-sizing: border-box;
+    margin: 30px auto 180px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; 
+    justify-content: flex-start;
+    column-gap: 20px;
+    row-gap: 40px;
+
+    .project {
+        background-size: cover;
+        background-position: center;
+        width: 388px;
+        height: 388px;
+
+        width: 290px;
+        height: 360px;
+        
+        background-color: transparent;
+        perspective: 1000px; /* Remove this if you don't want the 3D effect */
+
+        .project-card-container {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            transition: transform 1.3s;
+            transform-style: preserve-3d;
+
+            .project-card-front, .project-details {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                -webkit-backface-visibility: hidden; /* Safari */
+                backface-visibility: hidden;
+              }
+
+              .project-card-front {
+                background-color: #bbb;
+                color: black;
+                box-sizing: border-box;
+                width: 100%;
+                height: 100%;
+                border-radius: 10px;
+                cursor: pointer;
+
+                .front-header {
+                    font-family: 'Spartan', sans-serif;
+                    height:100px;
+                    width: 100%;
+                    font-size: 24px;
+                    padding-top: 37px;
+                    box-sizing: border-box;
+                    border-top-left-radius: 10px;
+                    border-top-right-radius: 10px;
+                }
+
+                .vn-header {
+                    background: #000000;  /* fallback for old browsers */
+                    background: -webkit-linear-gradient(to left #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
+                    background: linear-gradient(to left, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+                    color: rgb(224, 224, 224);
+                }
+
+                .auto-header {
+                    color: #ffdc00;
+                    background: #0f0c29;  /* fallback for old browsers */
+                    background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);  /* Chrome 10-25, Safari 5.1-6 */
+                    background: linear-gradient(to right, #24243e, #302b63, #0f0c29); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+                }
+
+                .game-header {
+                    color: #eee;
+                    background: #c0392b;  /* fallback for old browsers */
+                    background: -webkit-linear-gradient(to right, #8e44ad, #c0392b);  /* Chrome 10-25, Safari 5.1-6 */
+                    background: linear-gradient(to right, #8e44ad, #c0392b); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+                }
+
+                .youtube-header {
+                    color:#eee;
+                    background: #ED213A;  /* fallback for old browsers */
+                    background: -webkit-linear-gradient(to right, #93291E, #ED213A);  /* Chrome 10-25, Safari 5.1-6 */
+                    background: linear-gradient(to right, #93291E, #ED213A); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+                }
+
+                .tekken-header {
+                    color:#eee;
+                    background: #141E30;  /* fallback for old browsers */
+                    background: -webkit-linear-gradient(to right, #243B55, #141E30);  /* Chrome 10-25, Safari 5.1-6 */
+                    background: linear-gradient(to right, #243B55, #141E30); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+                }
+
+                .movie-header {
+                    background: #536976;  /* fallback for old browsers */
+                    background: -webkit-linear-gradient(to right, #292E49, #536976);  /* Chrome 10-25, Safari 5.1-6 */
+                    background: linear-gradient(to right, #292E49, #536976); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+                    color: #B3C6D4;             
+                }
+
+                .vgmhub-header {
+                    background: #EF5466 !important; /* fallback for old browsers */
+                    background: -webkit-linear-gradient(to right, #292E49, #536976);  /* Chrome 10-25, Safari 5.1-6 */
+                    background: linear-gradient(to right, #292E49, #536976); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+                    color: #fff;              
+                }
+
+                .screenshot-comparison-header {
+                    background: #457fca;  /* fallback for old browsers */
+                    background: -webkit-linear-gradient(to right, #5691c8, #457fca);  /* Chrome 10-25, Safari 5.1-6 */
+                    background: linear-gradient(to right, #5691c8, #457fca); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */                    
+                    color: #fff;                
+                }
+
+                .iptv-header {
+                    background: #56ab2f;  /* fallback for old browsers */
+                    background: -webkit-linear-gradient(to right, #a8e063, #56ab2f);  /* Chrome 10-25, Safari 5.1-6 */
+                    background: linear-gradient(to right, #a8e063, #56ab2f); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+                    color: #fff;                             
+                }
+
+                .front-main-content {
+                    width: 100%;
+                    height: 260px;
+                    background-size: cover;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    border-bottom-left-radius: 10px;
+                    border-bottom-right-radius: 10px;
+                }
+
+                /* project specific */
+                .vn-main-content {
+                    background-image: url("/img/p1.png");
+                }
+
+                .auto-main-content {
+                    background-image: url("/img/p2.png");                
+                }
+
+                .game-main-content {
+                    background-image: url("/img/p3.jpg");
+                }
+
+                .youtube-main-content {
+                    background-image: url("/img/p4.png");
+                    background-size:210%;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-position-y: 56%;
+                }
+
+                .tekken-main-content {
+                    background-image: url("/img/p5.png");
+                }
+
+                .movie-main-content {
+                    background-position-x: 46.1%;
+                    background-image: url("/img/p6.avif");          
+                }
+
+                .vgmhub-main-content {
+                    background-position-x: 46.1%;
+                    background-image: url("/img/p7.jpg");          
+                }
+
+                .screenshot-comparison-main-content {
+                    background-image: url("/img/p8.jpg");  
+                    background-position: center;  
+                }
+
+                .iptv-main-content {
+                    background-image: url("/img/p9.jpg");  
+                    background-position: center;  
+                }
+              }
+
+              .project-details {
+                background-color: #f8f9fa;
+                color: white;
+                transform: rotateY(180deg);
+                transition-delay: 0.3s;
+                box-sizing: border-box;
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+                border-radius: 10px;
+                height: 100%;
+                width: 100%;
+                position: relative;
+                overflow: hidden;
+
+                .card {
+                    visibility: hidden;
+                    opacity: 0;
+                    transition: visibility 0s, opacity 0.81s linear;
+                    left:0;
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    background-size: contain;
+                    background-position: center;
+                    background-repeat: no-repeat;
+
+                    .back-header {
+                        font-family: 'Spartan', sans-serif;
+                        letter-spacing: 1px;
+                        padding-top: 12px;
+                        height:80px;
+                        width: 100%;
+                        box-sizing: border-box;
+    
+                        div {
+                            display: block;
+                            height: 50%;
+                            box-sizing: border-box;
+                            text-align: center;
+                            padding-top: 7px;
+                        }
+    
+                        .project-name {
+                            color: #333352;
+                            font-weight: 500;
+                            font-size:19px;
+                        }
+    
+                        .languages {
+                            color: rgb(152, 152, 152);
+                            font-weight: 200;
+                            font-size: 15px;
+                            font-size: 11px;
+                            margin-top: 4px;
+                            letter-spacing: 0;
+                        }
+                    }
+    
+                    .project-description {
+                        font-family: 'Spartan', sans-serif;
+                        width: 100%;
+                        height: 210px;
+                        color: #333352;
+                        font-size: 12px;
+                        text-align: left;
+                        padding:10px 23px;
+                        box-sizing: border-box;
+                        line-height: 19px;
+                    }
+    
+                    .view-demo {
+                        font-family: 'Quicksand', sans-serif;
+                        font-weight: 100;
+                        border-radius: 3px;
+                        font-size:14px;
+                        display: inline-block;
+                        background-color: #55cca2;
+                        color: #fff;
+                        text-decoration: none;
+                        margin: 8px auto 12px; // 8 auto 13 
+                        box-sizing: border-box; 
+                        padding: 4px 17px;
+                        transition: ease-in-out 0.22s;
+                    }
+    
+                    .view-demo:hover {
+                        transform: scale(1.05);
+                    }
+    
+                    .github {
+                        color: rgb(182, 182, 182);
+                        font-family: 'Quicksand', sans-serif;
+                        font-weight: 100;
+                        font-size:14px;
+                        display: inline-block;
+                        border-bottom: 1px solid rgb(182, 182, 182);
+                        text-decoration: none;
+                        margin: 0 auto;
+                        box-sizing: border-box;
+                        transition: ease-in-out 0.22s;
+                    }
+    
+                    .github:hover {
+                        color: #000;
+                        border-bottom: 1px solid #000;
+                    }
+
+                }
+
+                .card-0 {
+                    visibility: visible;
+                    opacity: 1;
+                }
+          
+                .arrow {
+                    font-weight: 400;
+                    line-height: 33px;
+                    border-radius: 3px;
+                    box-sizing: border-box;
+                    padding: 0 10px;
+                    background-color: rgb(197, 197, 197);
+                    position: absolute;
+                    font-size: 30px;
+                    cursor: pointer;
+                    transition: 0.14s ease-in-out;
+                    bottom:9px;
+                    height: 35px;
+                }
+
+                .left-arrow {
+                    left: 10px;
+                }
+
+                .right-arrow {
+                    right: 10px;
+                }
+
+                .arrow:hover {
+                    background-color: rgb(75, 75, 75);
+                }
+              }
+          }
+    }
+
+    .project:hover .project-card-container {
+        transform: rotateY(180deg);
+        transition-delay: 0.3s;
+      }
+}

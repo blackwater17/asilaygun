@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@100;200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600&display=swap');
+
+.about-content-container {
+    width: 1100px;
+    margin: 50px auto 120px; 
+    
+    .header-row {
+        height: 150px;
+        width: 100%;
+        background-color: #eee;
+        margin-bottom: 16px;
+        display: flex;
+        box-sizing: border-box;
+        padding: 24px 40px 160px 40px;
+
+        .info-container {
+            width: 25%;
+            height: 100%;
+            margin: 0 40px;
+
+            .img-container {
+                height: 70px;
+                width: 100%;
+                text-align: center;
+                margin-bottom: 11px;
+            
+                img {
+                    height: 100%;
+                    margin: 0 auto;
+                    filter: invert(89%) sepia(44%) saturate(640%) hue-rotate(82deg) brightness(89%) contrast(77%);
+                }
+            }
+
+            .info-text {
+                font-weight: 600;
+                color:#727272;
+                font-size: 13px;
+                // font-family: 'Spartan', sans-serif;
+                text-align: center;
+                width: 100%;
+                font-weight: bold;
+                font-family: sans-serif;
+                
+                div {
+                    font-size:19px;
+                    color:#55cca2;
+                    margin-bottom: 4px;
+                    font-weight: lighter;
+                }
+            }
+        }
+    }
+
+    .middle-row {
+        height: 360px;
+        width: 100%;
+        background-color: #eee; 
+        display: flex;
+
+        .middle-box {
+            width: 33.3%;
+            position: relative;
+
+            .profile-pic {
+                width: 220px;
+                height: 220px;
+                border-radius: 50%;
+                margin: 0;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                -ms-transform: translate(-50%, -50%);
+                transform: translate(-50%, -50%);         
+                background-image: url("https://i.hizliresim.com/drgagz9.png");
+                background-size: contain;
+                box-shadow: 0 0 15px #333352;   
+                background-position: center;
+                background-repeat: no-repeat;
+            }
+
+            .middle-info {
+                font-family: 'Quicksand', sans-serif;
+                padding: 15px;
+                box-sizing: border-box;
+                height: 86%;
+                width: 86%;
+                background-color: #e7e7e7;
+                margin: 0;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                -ms-transform: translate(-50%, -50%);
+                transform: translate(-50%, -50%);   
+                color: rgb(145, 145, 145);
+                text-align: center;
+                font-size: 16px;
+                line-height: 26px;       
+
+                .title-text {
+                    margin-bottom: 10px;
+                    span {
+                        font-size: 22px;
+                        border-bottom: 1px solid rgb(190, 190, 190);     
+                    }                  
+                }
+
+                .highlight-text {
+                    color:#55cca2;
+                }
+
+                .line {
+                    margin: 10px auto;
+                    text-align: center;
+                    width: 74%;
+                    border-bottom: 1px solid rgb(199, 199, 199);
+                }
+            }
+
+            .languages {
+                line-height: 55px;
+            }
+        }
+    }
+
+    .bottom-row {
+        width: 100%;
+        height: 250px;
+        border-top: 1px solid rgb(201, 201, 201);
+        display: flex;
+        box-sizing: border-box;
+
+        .bottom-box {
+            font-family: 'Quicksand', sans-serif;
+            padding: 15px 37px;
+            box-sizing: border-box;
+            width: 50%;
+            background-color: #e7e7e7;
+            color: rgb(145, 145, 145);
+            text-align: center;
+            font-size: 18px;
+            line-height: 26px;
+
+            .title-text {
+                margin-bottom: 10px;
+                span {
+                    font-size: 22px;
+                    border-bottom: 1px solid rgb(190, 190, 190);     
+                }
+            }
+
+            .second {
+                margin-top: 20px;
+            }
+
+        }
+
+        .bottom-box:nth-of-type(1) {
+            border-right: 1px solid rgb(201, 201, 201);
+        }
+    }
+
+}
