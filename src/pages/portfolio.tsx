@@ -14,6 +14,17 @@ const projects = [
     cover: "p7.jpg"
   },
   {
+    id: "job-finder",
+    name: "Job Finder App",
+    imageCount: 6, // including cover
+    languages: "Next.js | SASS | Tailwind | API",
+    description: "Developed using Next.js, TypeScript, and SASS, this platform allows users to search for jobs by field or company name and apply directly through the application. It features advanced filtering options, detailed job descriptions, and secure login/logout functionality for a streamlined user experience.",
+    demoLink: undefined,
+    repoLink: "https://github.com/blackwater17/job-finder-app",
+    folderName: "p10",
+    cover: "p10.jpg"
+  },
+  {
     id: "iptv",
     name: "IPTV Football App",
     imageCount: 2, // including cover
