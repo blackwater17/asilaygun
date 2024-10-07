@@ -94,6 +94,26 @@
                     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
                 }
 
+                .todo-app-header {
+                    background: #457fca;
+                    /* fallback for old browsers */
+                    background: -webkit-linear-gradient(to right, #5691c8, #457fca);
+                    /* Chrome 10-25, Safari 5.1-6 */
+                    background: linear-gradient(to right, #5691c8, #457fca);
+                    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+                    color: #fff;
+                }
+
+                .linkedin-blocker-header {
+                    background: #00B4DB;
+                    /* fallback for old browsers */
+                    background: -webkit-linear-gradient(to right, #0083B0, #00B4DB);
+                    /* Chrome 10-25, Safari 5.1-6 */
+                    background: linear-gradient(to right, #0083B0, #00B4DB);
+                    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+                    color: #fff;
+                }
+
                 .youtube-header {
                     color: #eee;
                     background: #ED213A;
@@ -217,6 +237,10 @@
                 .iptv-main-content {
                     // background-image: url("/img/p9.jpg");  
                     background-position: center;
+                }
+
+                .linkedin-blocker-main-content {
+                    background-color: #eee;
                 }
             }
 

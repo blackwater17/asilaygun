@@ -14,6 +14,17 @@ const projects = [
     cover: "p7.jpg"
   },
   {
+    id: "linkedin-blocker",
+    name: "Job Posting Blocker",
+    imageCount: 3, // including cover
+    languages: "Javascript | Intersection Observer API",
+    description: "This browser extension/userscript will allow you to block and hide job postings by certain companies you choose in LinkedIn platform.",
+    demoLink: undefined,
+    repoLink: "https://github.com/blackwater17/linkedin-job-posting-blocker",
+    folderName: "p12",
+    cover: "p12.png"
+  },
+  {
     id: "job-finder",
     name: "Job Finder App",
     imageCount: 6, // including cover
@@ -103,6 +114,17 @@ const projects = [
     repoLink: "https://github.com/blackwater17/game-browser",
     folderName: "p3",
     cover: "p3.jpg"
+  },
+  {
+    id: "todo-app",
+    name: "To-do App",
+    imageCount: 3, // including cover
+    languages: "React.js | Tailwind",
+    description: "A simple todo-app with drag & drop feature. Dragging tasks can be used to easily change the status of them. Used languages are React.js and Tailwind.",
+    demoLink: undefined,
+    repoLink: "https://github.com/blackwater17/todo-app",
+    folderName: "p11",
+    cover: "p11.png"
   },
   {
     id: "youtube",
